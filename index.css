@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+hmtl {
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    height: 6vh;
+}
+
+main {
+    min-height: 94vh;
+    max-height: 94vh;
+}
+
+/* navbar */
+
+.collapse {
+    z-index: 999;
+}
+
+.sidebar-menu-item {
+    display: none;
+}
+
+.navbar {
+    box-shadow: 0 0 10px 0 rgba(10, 12, 14, 0.5);
+}
+
+/* navbar */
+
+/* sidebar css  */
+
+#sidebar {
+    box-shadow: 0 0 10px 0 rgba(10, 12, 14, 0.5);
+    background-color: #f8f9fa;
+}
+
+.sidebar-logo {
+    padding: 1.15rem 1.5rem;
+}
+
+.sidebar-logo a {
+    color: rgb(0 0 0 / 90%);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.sidebar-nav {
+    padding: 0;
+}
+
+.sidebar-header {
+    color: rgb(0 0 0 / 90%);
+    font-size: .75rem;
+    padding: 1.5rem 1.5rem .375rem;
+}
+
+a.sidebar-link {
+    padding: .625rem 1.625rem;
+    color: rgb(0 0 0 / 90%);
+    position: relative;
+    display: block;
+    font-size: 1rem;
+}
+
+/* sidebar css  */
+
+/* main content */
+
+.main-content {
+    overflow-y: auto;
+    height: 94vh;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* main content */
+
+/* responsiveness */
+
+@media (max-width:991px) {
+    #sidebar {
+        display: none;
+    }
+
+    .navbar .sidebar-menu-item {
+        display: block;
+    }
+
+
+    .navbar .collapse {
+        padding: 5px;
+        box-shadow: 0 0 10px 0 #d7d8d8;
+        background-color: #f8f9fa;
+    }
+}
+
+/* responsiveness */
